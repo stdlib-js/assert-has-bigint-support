@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-has-bigint-support",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Detect native BigInt support.",
   "license": "Apache-2.0",
   "author": {
