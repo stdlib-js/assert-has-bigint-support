@@ -24,30 +24,38 @@ limitations under the License.
 
 > Detect native [`BigInt`][mdn-bigint] support.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-has-bigint-support
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var hasBigIntSupport = require( '@stdlib/assert-has-bigint-support' );
+hasBigIntSupport = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var hasBigIntSupport = require( 'path/to/vendor/umd/assert-has-bigint-support/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.hasBigIntSupport;
+})();
+</script>
 ```
 
 #### hasBigIntSupport()
@@ -69,73 +77,31 @@ var bool = hasBigIntSupport();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var hasBigIntSupport = require( '@stdlib/assert-has-bigint-support' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 if ( hasBigIntSupport() ) {
     console.log( 'Environment has BigInt support.' );
 } else {
     console.log( 'Environment lacks BigInt support.' );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
-* * *
 
-<section class="cli">
-
-## CLI
-
-<section class="installation">
-
-## Installation
-
-To use the module as a general utility, install the module globally
-
-```bash
-npm install -g @stdlib/assert-has-bigint-support
-```
-
-</section>
-
-<!-- CLI usage documentation. -->
-
-<section class="usage">
-
-### Usage
-
-```text
-Usage: has-bigint-support [options]
-
-Options:
-
-  -h,    --help                Print this message.
-  -V,    --version             Print the package version.
-```
-
-</section>
-
-<!-- /.usage -->
-
-<section class="examples">
-
-### Examples
-
-```bash
-$ has-bigint-support
-<boolean>
-```
-
-</section>
-
-<!-- /.examples -->
-
-</section>
-
-<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
