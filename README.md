@@ -35,17 +35,71 @@ limitations under the License.
 
 > Detect native [`BigInt`][mdn-bigint] support.
 
+<section class="installation">
 
+## Installation
 
+```bash
+npm install @stdlib/assert-has-bigint-support
+```
 
+Alternatively,
 
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
 
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
 
+</section>
 
+<section class="usage">
+
+## Usage
+
+```javascript
+var hasBigIntSupport = require( '@stdlib/assert-has-bigint-support' );
+```
+
+#### hasBigIntSupport()
+
+Detects if a runtime environment supports ES2020 [`BigInt`][mdn-bigint].
+
+```javascript
+var bool = hasBigIntSupport();
+// returns <boolean>
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var hasBigIntSupport = require( '@stdlib/assert-has-bigint-support' );
+
+if ( hasBigIntSupport() ) {
+    console.log( 'Environment has BigInt support.' );
+} else {
+    console.log( 'Environment lacks BigInt support.' );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+* * *
 
 <section class="cli">
 
-
+## CLI
 
 <section class="installation">
 
@@ -63,7 +117,7 @@ npm install -g @stdlib/assert-has-bigint-support-cli
 
 <section class="usage">
 
-## Usage
+### Usage
 
 ```text
 Usage: has-bigint-support [options]
@@ -80,7 +134,7 @@ Options:
 
 <section class="examples">
 
-## Examples
+### Examples
 
 ```bash
 $ has-bigint-support
@@ -99,11 +153,6 @@ $ has-bigint-support
 
 <section class="related">
 
-## See Also
-
--   <span class="package-name">[`@stdlib/assert-has-bigint-support`][@stdlib/assert-has-bigint-support]</span><span class="delimiter">: </span><span class="description">detect native BigInt support.</span>
-
-
 </section>
 
 <!-- /.related -->
@@ -121,7 +170,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-### Community
+#### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -144,11 +193,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-has-bigint-support-cli.svg
-[npm-url]: https://npmjs.org/package/@stdlib/assert-has-bigint-support-cli
+[npm-image]: http://img.shields.io/npm/v/@stdlib/assert-has-bigint-support.svg
+[npm-url]: https://npmjs.org/package/@stdlib/assert-has-bigint-support
 
-[test-image]: https://github.com/stdlib-js/assert-has-bigint-support/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/assert-has-bigint-support/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/assert-has-bigint-support/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/assert-has-bigint-support/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/assert-has-bigint-support/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/assert-has-bigint-support?branch=main
