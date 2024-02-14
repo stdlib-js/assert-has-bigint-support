@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@deno/mod.js';
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.0-deno/mod.js';
 ```
 
 #### hasBigIntSupport()
@@ -65,7 +65,7 @@ var bool = hasBigIntSupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@deno/mod.js';
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.0-deno/mod.js';
 
 if ( hasBigIntSupport() ) {
     console.log( 'Environment has BigInt support.' );
