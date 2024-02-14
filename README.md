@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@esm/index.mjs';
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.0-esm/index.mjs';
 ```
 
 #### hasBigIntSupport()
@@ -70,7 +70,7 @@ var bool = hasBigIntSupport();
 <body>
 <script type="module">
 
-import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@esm/index.mjs';
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.0-esm/index.mjs';
 
 if ( hasBigIntSupport() ) {
     console.log( 'Environment has BigInt support.' );
