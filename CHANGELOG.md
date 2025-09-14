@@ -2,6 +2,53 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-09-14)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#8050](https://github.com/stdlib-js/stdlib/issues/8050)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`9f40b8f`](https://github.com/stdlib-js/stdlib/commit/9f40b8fabeda81fce95e140b59ffc20eef4f7990) - **chore:** fix JavaScript lint errors [(#8073)](https://github.com/stdlib-js/stdlib/pull/8073) _(by Vara Rahul Rajana, Athan Reines)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Athan Reines
+-   Vara Rahul Rajana
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-27)
