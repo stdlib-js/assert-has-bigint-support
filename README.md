@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-has-bigint-support/tags). For example,
+
+```javascript
 import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.3-deno/mod.js';
 ```
 
@@ -65,7 +70,7 @@ var bool = hasBigIntSupport();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@v0.2.3-deno/mod.js';
+import hasBigIntSupport from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-has-bigint-support@deno/mod.js';
 
 if ( hasBigIntSupport() ) {
     console.log( 'Environment has BigInt support.' );
